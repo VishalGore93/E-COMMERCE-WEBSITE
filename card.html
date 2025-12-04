@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+    <!-- Boxicons -->
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- Glide js -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.core.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.4.1/css/glide.theme.css">
+    <!-- Custom StyleSheet -->
+	<link rel="stylesheet" href="">
+	<link rel="stylesheet" href="css/styles2.css">
+    <link rel="icon" type="images/" href="images/My icon.jpg">
+    <title>Payment </title>
+	<script src="https://kit.fontawesome.com/e8fa2e31b4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+
+		<!-- navigation -->
+		<div class="navigation">
+		  <div class="nav-center container d-flex">
+			<a>
+			  <img src="./images/channels4_profile.jpg" class="#" width="140" height="75" >
+			</a>
+  
+			<ul class="nav-list d-flex">
+			  <li class="nav-item">
+				<a href="index.html" class="nav-link">Home</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="product.html" class="nav-link">Shop</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="Moreproduct.html" class="nav-link">Fashion</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="Kids.html" class="nav-link">Kids</a>
+			  </li>
+			  <li class="nav-item">
+				<a href="contactus.html" class="nav-link">Contact</a>
+			  </li>
+  
+			  <li class="icons d-flex">
+				<a href="login.html" class="icon">
+				  <i class="bx bx-user"></i>
+				</a>
+				<div class="icon">
+				  <i class="bx bx-search"></i>
+				</div>
+				<div class="icon">
+				  <i class="bx bx-heart"></i>
+				  <span class="d-flex">0</span>
+				</div>
+				<a href="cart.html" class="icon">
+				  <i class="bx bx-cart"></i>
+				  <span class="d-flex">0</span>
+				</a>
+			  </li>
+			</ul>
+	
+			<div class="icons d-flex">
+			  <div class="icon2">
+				<button1 class="icon2" aria-label="Search">
+				  <i class="bx bx-search"></i>
+				  <input type="search" name="search" placeholder="Search Product..." class="icon2" >
+				</button1>
+			  </div>
+			  </div>
+			  <div> 
+				<a href="login.html" class="icon">
+				<i class="bx bx-user"></i>
+			  </a> 
+			  </div>
+			  <div>
+				<a href="productDetails.html" class="icon">
+				<i class="bx bx-heart"></i>
+				<span class="d-flex">1</span>
+			  </a>
+			  </div>
+			  <div>
+			  <a href="cart.html" class="icon">
+				<i class="bx bx-cart"></i>
+				<span class="d-flex">5</span>
+			  </a>
+			</div>
+  
+			<div class="hamburger">
+			  <i class="bx bx-menu-alt-left"></i>
+			</div>
+		  </div>
+		</div>
+
+		<!-- navigation -->
+
+	<div class="container">
+		<div class="left">
+			<p>Payment methods</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="methods">
+				<div onclick="doFun()" id="tColorA" style="color: greenyellow;"><i class="fa-solid fa-credit-card" style="color: greenyellow;"></i> Payment by card</div>
+				<div onclick="doFunA()" id="tColorB"><i class="fa-solid fa-building-columns"></i> Internet banks</div>
+				<div onclick="doFunB()" id="tColorC"><i class="fa-solid fa-wallet"></i> Apple/Google pay</div>
+				<div onclick="doFunC()" id="tColorD"><i class="fa-solid fa-wallet"></i> Cash On Delivery</div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+		</div>
+		<div class="center">
+			<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="250" height="auto"/></a>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+
+			<div class="card-details">
+				<form>
+					<p>Card number</p>
+					<div class="email">
+						<input id="number" class="cc-number" placeholder="Card number" maxlength="19" required>
+					
+					</div>
+
+					<div class="c-details">
+						<div>
+							<p>Expiry date</p>
+							<input id="e-date" class="cc-exp" placeholder="MM/YY" required maxlength="5" required>
+						</div>
+						<div>
+							<p>CVV</p>
+							<div class="cvv-box">
+								<input id="cvv" class="cc-cvv" placeholder="CVV" required maxlength="3" required>
+		                       
+							</div>
+						</div>
+					</div>
+					<div class="email">
+						<p>Email</p>
+						<input type="email" placeholder="example@email.com" id="email" required>
+					</div>
+					<button>PAY NOW</button>
+				</form>
+			</div>
+		</div>
+		
+		
+
+
+		<div class="right">
+			<p>Order information</p>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<div class="details">
+				<div style="font-weight: bold; padding: 3px 0;">Order discription</div>
+				<div style="padding: 3px 0;">Test payment</div>
+			</div>
+			<hr style="border:1px solid #ccc; margin: 0 15px;">
+			<a href="https://www.shift4shop.com/credit-card-logos.html"><img alt="Credit Card Logos" title="Credit Card Logos" src="https://www.shift4shop.com/images/credit-card-logos/cc-lg-4.png" width="100%" height="auto" /></a>
+		</div>
+		
+	</div>
+
+
+	 <!-- Footer -->
+	 <footer class="footer">
+		<div class="row">
+		  <div class="col d-flex">
+			<h4>INFORMATION</h4>
+			<a href="">About us</a>
+			<a href="">Contact Us</a>
+			<a href="">Term & Conditions</a>
+			<a href="">Shipping Guide</a>
+		  </div>
+		  <div class="col d-flex">
+			<h4>USEFUL LINK</h4>
+			<a href="">Online Store</a>
+			<a href="">Customer Services</a>
+			<a href="">Promotion</a>
+			<a href="">Top Brands</a>
+		  </div>
+		  <div class="col d-flex">
+			<span><i class="bx bxl-facebook-square"></i></span>
+			<span><i class="bx bxl-instagram-alt"></i></span>
+			<span><i class="bx bxl-github"></i></span>
+			<span><i class="bx bxl-twitter"></i></span>
+			<span><i class="bx bxl-pinterest"></i></span>
+		  </div>
+		</div>
+	  </footer>
+
+	<script src="js/card.js"></script>
+</body>
+</html>
